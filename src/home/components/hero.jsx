@@ -17,7 +17,7 @@ function Hero() {
           <a href='#'>Features</a>
           <a href='#'>Pricing</a>
         </nav>
-        <FilledButton mr={5} mt={5}  text={'Join Now'} />
+        <FilledButton mr={5} mt={5} link={'https://zengym.netlify.app/'}  text={'Join Now'} />
       </div>
       <div className='context'>
         <div className='leftArea'>
@@ -44,7 +44,7 @@ function Hero() {
           </div>
 
             <div className='buttons_wrapper'>
-              <FilledButton text={'Get Started'} />
+              <FilledButton text={'Get Started'} link={'https://zengym.netlify.app/'} />
               <OutlinedButton text={'How it Works'} />
             </div>
           

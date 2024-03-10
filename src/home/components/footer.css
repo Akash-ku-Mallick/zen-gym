@@ -36,6 +36,7 @@
     text-align: center;
     border-top: 1px solid var(--secoundary);
     justify-content: flex-end;
+    height: 30px;
 }
 
 .reff_wraper {

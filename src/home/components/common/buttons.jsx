@@ -25,6 +25,15 @@ const buttonVariants = {
 
 const FilledButton = (props) => {
 
+    const handleClick = () => {
+        if(props.link) {
+            window.open(props.link, "_blank");
+        }
+        else {
+            alert("Not implemented yet");
+        }
+    }
+
     return (
         <motion.div
         className='filled-btn filled-one'
@@ -35,6 +44,7 @@ const FilledButton = (props) => {
             marginTop: props.mt ? props.mt : 0, 
             marginRight: props.mr ? props.mr : 0, 
             marginBottom: props.mb ? props.mb : 0}}
+        onClick={handleClick}
         >
             <Outline />
             <span>{props.text}</span>
@@ -43,6 +53,15 @@ const FilledButton = (props) => {
 }
 
 const FilledButton2 = (props) => {
+
+    const handleClick = () => {
+        if(props.link) {
+            window.open(props.link, "_blank");
+        }
+        else {
+            alert("Not implemented yet");
+        }
+    }
 
     return (
         <motion.div
@@ -54,6 +73,7 @@ const FilledButton2 = (props) => {
             marginTop: props.mt ? props.mt : 0, 
             marginRight: props.mr ? props.mr : 0, 
             marginBottom: props.mb ? props.mb : 0}}
+        onClick={handleClick}
         >
             <Outline />
             <span>{props.text}</span>
@@ -63,11 +83,21 @@ const FilledButton2 = (props) => {
 
 const OutlinedButton = (props) => {
 
+    const handleClick = () => {
+        if(props.link) {
+            window.open(props.link, "_blank");
+        }
+        else {
+            alert("Not implemented yet");
+        }
+    }
+
     return (
         <motion.div className='outline-btn'
         whileTap="tap"
         whileHover="hover"
         variants={buttonVariants}
+        onClick={handleClick}
         >
             <Outline />
             <span>{props.text}</span>
@@ -78,11 +108,21 @@ const OutlinedButton = (props) => {
 
 const OutlinedButton2 = (props) => {
 
+    const handleClick = () => {
+        if(props.link) {
+            window.open(props.link, "_blank");
+        }
+        else {
+            alert("Not implemented yet");
+        }
+    }
+
     return (
         <motion.div className='outline-btn outline-btn2'
         whileTap="tap"
         whileHover="hover"
         variants={buttonVariants}
+        onClick={handleClick}
         >
             <Outline />
             <span>{props.text}</span>

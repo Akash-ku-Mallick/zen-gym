@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 const MINIMUM_WIDTH = 240;
 
+import img1 from '../../../assets/images/gym1.png';
 
 function Carousel() {
     const [windowWidth, setWidth] = useState(window.innerWidth);
@@ -32,7 +33,7 @@ export default Carousel
 const Object = (item) => {
     return (
     <div className='box'>
-        <img src='https://picsum.photos/200/300' />
+        <img src={img1} />
         <span className='vis'>{item.name}</span>
         <span className='invi'>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -45,37 +46,37 @@ const data = [
     {
         id: 1,
         name: 'Gym',
-        image: './assets/gym1.png',
+        image: img1,
         description: 'name',
     },
     {
         id: 2,
         name: 'Yoga',
-        image: 'images',
+        image: img1,
         description: 'name',
     },
     {
         id: 3,
         name: 'Zumba',
-        image: 'images',
+        image: img1,
         description: 'name',
     },
     {
         id: 4,
         name: 'name',
-        image: 'images',
+        image: img1,
         description: 'name',
     },
     {
         id: 5,
         name: 'name',
-        image: 'images',
+        image: img1,
         description: 'name',
     },
     {
         id: 6,
         name: 'name',
-        image: 'images',
+        image: img1,
         description: 'name',
     }
 ]
