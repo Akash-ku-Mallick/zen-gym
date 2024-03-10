@@ -1,0 +1,71 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    --MAX_Width: 650px;
+}
+
+.informations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--MAX_Width);
+}
+
+.informations > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.rightText {
+    align-self: flex-end;
+    text-align: start;
+}
+
+.displaySolid, .displayOutline {
+    font-size: 40px;
+}
+
+.video_wraper {
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--MAX_Width);
+    clip-path: polygon(85% 1%, 100% 15%, 100% 100%, 15% 100%, 0 85%, 0 0);
+}
+
+.video {
+    overflow: hidden;
+    width: 100%;
+}
+
+.playbtn {
+    position: absolute;
+    height: 70px;
+    aspect-ratio: 1/1;
+    border-radius: 10rem;
+    border: none;
+    font-size: 30px;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    place-items: center;
+
+    color: var(--primary);
+    background-color: var(--bg); 
+    
+    transition: all 210ms ease-in-out;
+}
+
+.playbtn:hover {
+    transform: scale(1.2);
+}

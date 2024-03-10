@@ -1,0 +1,6 @@
+html {
+    --bg_col: hsl(204, 19%, 26%);
+    overflow: auto;
+    overflow-x: hidden;
+}
+

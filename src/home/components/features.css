@@ -1,0 +1,15 @@
+.Features {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.displayOutline, .displaySolid {
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: 45px;
+}
+
+.displayOutline {
+    -webkit-text-stroke-width: 1px;   
+}

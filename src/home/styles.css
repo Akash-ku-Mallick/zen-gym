@@ -1,0 +1,94 @@
+/* Paytone */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Anton */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Passion One */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+html {
+    --displayFont: 400 normal 50px "Passion One", sans-serif;
+    --displayFont2: 400 normal 50px "Anton", sans-serif;
+    --PrimaryFont: 400 normal 16px "Quicksand", sans-serif;
+    --secoundaryFont: 400 normal 14px "Quicksand", sans-serif;
+
+    font: var(--PrimaryFont);
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        --bg: rgb(250, 249, 245); 
+        --text: #171f2f; 
+        --primary: #ffc107; 
+        --secondary: rgb(204, 204, 204); 
+        --accent: #FEC94A;
+    }    
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --bg: #171f2f;
+        --text: rgb(250, 249, 245);
+        --primary: rgb(215, 251, 1);
+        --secoundary: #36454f;
+        --accent: #FEC94A;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secoundary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+}
+
+.displaySolid, .displayOutline {
+    font: var(--displayFont);
+    word-spacing: 2px;
+    letter-spacing: 3px;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.displayOutline {
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.miniTextPrimed {
+    font: var(--secoundaryFont);
+    color: var(--primary);
+}
+
+.miniTextSimple {
+    font: var(--secoundaryFont);
+    color: var(--text);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+}

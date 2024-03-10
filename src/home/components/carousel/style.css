@@ -1,0 +1,128 @@
+.box {
+    width: 200px;
+    aspect-ratio: 2/3;
+    background-color: transparent;
+
+    clip-path: polygon(85% 1%, 100% 15%, 100% 100%, 15% 100%, 0 85%, 0 0);
+    
+    padding-block: 10px;
+    padding-inline: 5px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    place-items: center;
+}
+
+.box span {
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    text-overflow: clip;
+
+}
+
+.vis {
+    color: var(--accent);
+    grid-area: 1/1;
+    z-index: 4;
+    font: bold 11px;
+    font: var(--displayFont2);
+    opacity: 0.9;
+    transition: 320ms ease-in;
+}
+
+.invi {
+    grid-area: 1/1;
+    transform: translateY(250px);
+    z-index: 1;
+    opacity: 0;
+    backdrop-filter: none;
+    transition: 320ms ease-in;
+    overflow-y: auto;
+}
+
+.invi::-webkit-scrollbar{
+    width: 2px;
+}
+
+.box:hover .vis {
+    opacity: 0;
+    transition: all 460ms ease-in;
+}
+
+.box:hover .invi {
+    opacity: 1;
+    transform: translateY(0px);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    backdrop-filter: brightness(40%);
+    transition: all 460ms ease-in;
+}
+
+
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    grid-area: 1/1;
+    border-radius: 5px;
+}
+
+.carousel_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 350px;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    gap: 25px;
+}
+
+.carousel {
+    max-width: 80%;
+    min-width: 450px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+    
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 1px groove transparent;
+
+    border-left: 0;
+    border-right: 0;
+
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+/*  background-image: -webkit-repeating-linear-gradient( 10deg, transparent, transparent, #eeeeee5f, #eeeeee84, #eeeeee5f, transparent, transparent); */
+    border-radius: 5px;
+}
+
+.carousel:active::-webkit-scrollbar-track {
+    border-color: rgba(225, 225, 225, 0.412);
+}
+
+.carousel:hover::-webkit-scrollbar-track {
+    border-color: rgba(225, 225, 225, 0.412);
+}
+
+
+/* rgba(225, 225, 225, 0.412) */

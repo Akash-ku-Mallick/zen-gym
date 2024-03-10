@@ -1,0 +1,92 @@
+.footer {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_box {
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary);
+    clip-path: polygon(90% 0%, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.input_wraper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text);
+    clip-path: xywh(0 0px 100% 100% round 15% 0);
+}
+
+.input_wraper input {
+    border: none;
+    padding: 10px 30px 10px 30px;
+    outline: none;
+    z-index: 10;
+}
+
+
+.rights_text {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--secoundary);
+    justify-content: flex-end;
+}
+
+.reff_wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    gap: 5px;
+}
+
+.reff_wraper > div:nth-child(1) {
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.reff_wraper > div:nth-child(2) {
+    align-items: center;
+}
+
+.reff_wraper > div:nth-child(3) {
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.icon_wraper {
+    font-size: 35px;
+}
+
+.links_wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.content_wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_wraper span {
+    font-weight: 700;
+}
+
+.content_wraper a {
+    cursor: pointer;
+    transition: all 210ms ease-in-out;
+}
+
+.content_wraper a:hover {
+    text-decoration: underline;
+}

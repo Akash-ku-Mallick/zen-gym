@@ -1,0 +1,59 @@
+.pricing {
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.price_box {
+    width: 180px;
+    aspect-ratio: 2/3;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secoundary);
+    filter: contrast(2);
+    border: 1px solid transparent;
+    border-radius: 10px 4px 10px 4px;
+    justify-content: space-evenly;
+    clip-path: polygon(90% 0%, 100% 10%, 100% 100%, 10% 100%, 0 90%, 0 0);
+    padding-inline: 20px;
+    transition: all 210ms ease-in-out;
+    box-shadow: inset 0px 0px 0px 0px transparent;
+}
+
+.price_box:hover {
+    border-color: var(--text);
+}
+
+.price_box:hover .desc {
+    filter: brightness(0.9);
+}
+
+.desc {
+    height: 30%;
+    overflow: hidden;
+    font-size: 14px;
+    filter: brightness(0.7);
+}
+
+.iconWraper {
+    background-color: var(--primary);
+    height: 60px;
+    width: 60px;
+    clip-path: polygon(80% 0%, 100% 20%, 100% 100%, 20% 100%, 0 80%, 0 0);
+    display: grid;
+    place-content: center;
+}
+
+.iconWraper svg {
+    font-size: 30px;
+    color: black;
+}
